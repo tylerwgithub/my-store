@@ -1,0 +1,15 @@
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <!-- This is a pipe -->
+  <h4>{{ product.price | currency }}</h4>
+  <p>{{ product.description }}</p>
+  <p>{{ test }}</p>
+
+  <!-- <button (click) = "cartService.addToChart(product)">Buy</button> -->
+  <button (click)="addToCart(product)">Buy</button>
+  <!-- <p id="test">{{ cartService.getItems() }}</p> -->
+  <p></p>
+
+</div>
